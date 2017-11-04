@@ -1,0 +1,101 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+	color: #596974;
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+
+form {
+	width: 60%;
+	/*declara un limite aximo de ancho*/
+	max-width: 600px; 
+	/*declara un limite minimo de ancho*/
+	min-width: 300px;
+	/*declara valorespara*/
+	margin: 0 auto;
+}
+
+/*link / cubre la mayoria de los estados*/
+a {
+	color: black;
+}
+
+label {
+	background-color: white;
+}
+
+a:hover {
+	color: #93DCFF;
+}
+
+a:active {
+	color: #596974;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+	background-color: white;
+}
+	
+input[type="checkbox"]:checked + label {
+	color: #93DCFF;
+}
+
+#name-container > label {
+	background-color: darkblue;
+	color: #fff;
+}
+
+#name-container label:first-child {
+	background-color: white;
+	color: orange;
+}
+
+input:focus {
+	background-color: ##596974;
+}
+
+input:valid {
+	background-color: #93DCFF;
+}
+
+input:invalid {
+	background-color: none;
+}
+
+input,
+select,
+textarea {
+	background-color: orange;
+	width: 100%;
+	padding: 10px;
+	font-size: 20px;
+	margin-top: 8px;
+	border: 1px solid #93DCFF;
+}
+
+textarea {
+	resize: none;
+}
+
+.field {
+	/*left, right, none*/
+	width: 100%;
+	float: left;
+	margin: 0px 0px 20px 0px;
+	text-align: left;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	width: auto;
+}
+
+

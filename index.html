@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 
-	
+	<title>Formularios</title>
+
 </head>
 <body>
-	
+	<!-- Metodos: Es una instruccion para el servidor de como va a responder ( hay 4 tipos ) -->
+	<!-- Meotogo get: recursos de sólo escritura -->
+	<!-- Metodo post: se encarga de hacer peticiones para escritura -->
+	<!-- Metodo patch hace una petición para modificar un recurso / peticiçon de modificación -->
+	<!-- Metodo delete: Hace una petición de eliminación -->
+
+
+	<form action="registro.php" method="post"> 
+		<h1>Formularios</h1>
+		<div class="field" id="name-container">
+			<label for="nombre">N-Padre</label>
+			<label for="nombre">Nombre
+				<label for="">Este no es directo</label>
+			</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Tu nombre" autofocus="nombre" required autofocus> 
+		</div>
+ 
+		<div class="field">
+			<label for="apellido">Apellido</label>
+			<input type="text" name="apellido" id="apellido" placeholder="Tu apellido" required>
+		</div>
+
+		<div class="field">
+			<label for="email">Correo</label>
+			<input type="email" name="email" id="email" placeholder="Tu Correo" required>
+		</div>
+
+		<div class="field"> 
+			<input type="radio" name="sexo" id="hombre">
+			<label for="hombre">Hombre</label>
+			<input type="radio" name="sexo" id="mujer">
+			<label for="mujer">Mujer</label>
+		</div>
+		
+		</br>
+		<div class="fiel">
+			<select name="estado" id="estado" required>
+				<option value="0" disabled selected> Selecciona tu estado</option>
+				<option value="1">Aguascalientes</option>
+				<option value="2">Baja California</option>
+				<option value="3">Tecate</option>
+				<option value="4">Cd. Juarez</option>
+			</select>
+		</div>
+
+		</br>
+		<div class="field">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="Contraseña" required>
+		</div>
+
+		<div class="fiel">
+			<label for="mensaje">¿Por qué te estas registrando?</label> <br>
+			<textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
+		</div>
+		
+		<div class="field">
+			<input type="checkbox" name="terminos" id="terminos" required>
+			<label for="terminos">Acepto<a href="/Terminos" target="_blank"> Terminos y condiciones</label>
+			
+		</div>
+
+		<div class="field">
+			<!-- <button>Enviar</button> -->
+			<!-- <button type="submit">Enviar</button> -->
+			<!-- <input type="button" value="Enviar" -->
+			<input type="submit" value="Enviar">
+		</div>
+
+	</form>
+
+
 </body>
 </html>
